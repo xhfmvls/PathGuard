@@ -3,10 +3,10 @@
 Secure Programming Challenge Against LFI Threats
 
 ## Scenario
-In this challenge, participants are tasked with addressing a Local File Inclusion (LFI) vulnerability within a Python API built on FastAPI. The current code permits users to submit an image file name via a request body, subsequently returning the requested image through the API response. However, the absence of input validation exposes the API to potential exploitation, enabling users to use special characters to access files from different directories or even files with extensions beyond typical image formats like PNG and JPG.
-\n\n
-Participants are required to identify the location of the vulnerability and fix the issue(s) to fortify the application's defenses against LFI attacks. Successful resolution of the vulnerability demands that the API maintains its functionality while effectively neutralizing the identified security risk. 
-\n\n
+In this challenge, participants are tasked with addressing a Local File Inclusion (LFI) vulnerability within a Python API built on FastAPI. The current code permits users to submit an image file name via a request body, subsequently returning the requested image through the API response. However, the absence of input validation exposes the API to potential exploitation, enabling users to use special characters to access files from different directories or even files with extensions beyond typical image formats like PNG and JPG.  
+  
+Participants are required to identify the location of the vulnerability and fix the issue(s) to fortify the application's defenses against LFI attacks. Successful resolution of the vulnerability demands that the API maintains its functionality while effectively neutralizing the identified security risk.  
+  
 Submissions for this challenge must comprise solely of the amended code, confined within the **main.py** file.
 
 ## Requirements
@@ -72,7 +72,7 @@ Submissions for this challenge must comprise solely of the amended code, confine
   - **Image not found**: If the image file corresponding to the input file name does not exist.
   - **Invalid image name**: If the image file name contains characters that could enable a hacker to access files from different directories.
 
-\n
+  
 Note: For the case where the expected value is hash, you do not need to hash the image. As long as the image is shown correctly in your testing tool (e.g., Postman), it is almost guaranteed to be correct. The hash values are provided for validation purposes by the system only.
 
 ### 2. Submission Guidelines
